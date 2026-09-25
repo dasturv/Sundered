@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sundered</title>
+	<base href="./">
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
+	<div id="head-placeholder"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script>
+		$(function() {
+			$('#head-placeholder').load('navigation/head_content.html');
+			$('#topbar').load('navigation/topbar.html');
+			$('#sidebar').load('navigation/sidebar.html');
+			$('#bottombar').load('navigation/bottombar.html');
+		});
+	</script>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row bg-red">
+		<div class="col-12" id="topbar">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-2 col-md-3 bg-dark">
+			<nav class="navbar" id="sidebar">
+			</nav>
+		</div>
+		<div class="col-lg-10 col-md-9 content">
+			<h1>What is Sundered?</h1>
+			<p>Sundered is a fantasy tabletop roleplaying game. I started the process of designing Sundered after years of playing around with other systems — D&D, FATE, Shadowrun, Pathfinder, Call of Cthulu, Song of Ice and Fire — but always felt like something was missing. Sundered was built to scratch that itch for me and my play group: our perfect balance between abstraction without over-simplification, challenge without punishment, freedom without losing guidelines.</p>
+
+			<h2>Build the Character You Want</h2>
+			<p>One of the core ideas for Sundered was the freedom to make any character you could want. There are no classes nor levels determining your progression. Instead, you choose where your character excels, increasing Attributes, improving Skills and gaining Traits to define your own playstyle. In Sundered, you are not confined to traditional archetypes: martial might, magic, wealth, social ability and more can be woven together freely.</p>
+
+			<h2>The World is Dangerous</h2>
+			<p>Sundered also assumes that danger matters. Combat is a dangerous experience. Characters are capable, but at the end of the day they are human(oid), and a knife in the gut is still a knife in the gut. Survival requires planning, skill, proper equipment and oftentimes luck. Pushing oneself brings risk, and recovering from a poorly executed fight is costly and time consuming.</p>
+
+			<h2>Equipment Matters</h2>
+			<p>A sword is not just an attack roll in Sundered, but a core part of character building. Choosing a weapon is not just deciding how much damage you can do, but also what you can do and who you can fight effectively. Armor and shields serve as significant portions of a character's survivability. Tools and specialized equipment are able to expand on what a character can do. Choosing what you carry — and wear you spend your hard earned silver — matters.</p>
+
+			<h2>Magic Has a Price</h2>
+			<p>Magic in Sundered is powerful, flexible, rule-breaking — and dangerous. Spellcasters do things others cannot even dream of, but that power comes at a cost. An over-zealous or poorly trained spellcaster can quickly exhaust themselves, putting them at risk to be knocked unconcious or worse. Despite this, magic is often times worth the risk, with both dedicated casters and martial dabblers gaining much for the trouble.</p>
+
+			<h2>Adventuring Beyond Combat</h2>
+			<p>Sundered is not just concerned with what happens on the battlefield. Resting, researching, crafting, training and other downtime activities are central parts of Sundered's progression. Time is its own resource, and choosing how to spend it is just as important as silver and experience points. Due to this, while a soldier may shine in battle, a merchant, farmer or noble has a legitimate place in even the most combat-crazed Sundered game.</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12" id="bottombar">
+		</div>
+	</div>
+</div>
+<script>
+	function triggerExpand() {
+		expandAndHighlight('Introduction',null,null)
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sundered</title>
+	<base href="../">
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
+	<div id="head-placeholder"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script>
+		$(function() {
+			$('#head-placeholder').load('navigation/head_content.html');
+			$('#topbar').load('navigation/topbar.html');
+			$('#sidebar').load('navigation/sidebar.html');
+			$('#bottombar').load('navigation/bottombar.html');
+		});
+	</script>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row bg-red">
+		<div class="col-12" id="topbar">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-2 col-md-3 bg-dark">
+			<nav class="navbar" id="sidebar">
+			</nav>
+		</div>
+		<div class="col-lg-10 col-md-9 content">
+			<h1>Dice and Checks</h1>
+
+			<div class="clearfix">
+				<div class="toc float-end">
+					<h5>Table of Contents</h5>
+					<ul>
+						<li><a href="core_rules/dice_and_checks.html#dicepools">Dice Pools</a></li>
+						<li><a href="core_rules/dice_and_checks.html#hits">Hits</a></li>
+						<li><a href="core_rules/dice_and_checks.html#checks">Checks</a></li>
+					</ul>
+				</div>
+
+				<p>Sundered is a system that uses many 6-sided dice (d6s) to decide the success or failure of actions in the form of a <strong>Check</strong>. Unlike many systems, you do not add up your dice, instead counting <strong>Hits</strong>.
+				
+				<h2 id="dicepools">Dice Pools</h2>
+				<p>When making a Check, you roll a number of d6s called your <strong>Dice Pool.</strong> Most Dice Pools use a combination of an Attribute and a Skill, though other dice pools can exist.</p>
+				<div class="optional">
+					<p><strong>Example:</strong> If a Check calls for PHY + Athletics, you would add up your Physique Attribute and Athletics Skill and roll that many d6s.</p>
+				</div>
+				<h3>Modifying a Dice Pool</h3>
+				<p>Sometimes factors can increase or decrease a Dice Pool by adding or subtracting dice. Always apply all modifiers to a Dice Pool <strong>before</strong> rolling the dice. A Dice Pool can never be reduced to less than 0 dice.</p>
+
+				<h2 id="hits">Hits</h2>
+				<p>When rolling a Dice Pool, every 5 or 6 rolled is considered a Hit. Hits are counted in order to decide the magnitude of success.</p>
+				<div class="optional">
+					<p><strong>Example:</strong> You roll a Dice Pool of seven dice, getting 1,2,2,3,5,5, and 6. Three dice rolled a 5 or 6, meaning you scored 3 Hits.</p>
+				</div>
+
+				<h2 id="checks">Checks</h2>
+				<p>Checks are the primary way success and failure is dictated in Sundered. To make a Check, you roll the Dice Pool for the Check and compare your scored Hits against the Check's <strong>Threshold.</strong> If you score Hits equal to our greater than the Threshold, you succeed. Additional hits beyond the Threshold may improve the results when applicable. Consult the table below to get an idea what different Thresholds mean.</p>
+				<table>
+					<tbody>
+						<tr>
+							<th>Threshold</th>
+							<th>Difficulty</th>
+							<th>Examples</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>Routine</td>
+							<td><em>Balancing on a wide log, finding a small item in your backpack, hiking for a couple hours</em></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Standard</td>
+							<td><em>Climbing a stone wall, navigating a city unfamiliar to you, </em></td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Difficult</td>
+							<td><em>Keeping hold of a red hot iron, breaking down a wooden door, steering a ship in stormy weather</em></td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>Formidable</td>
+							<td><em></em></td>
+						</tr>
+						<tr>
+							<td>5+</td>
+							<td>Extraordinary</td>
+							<td><em></em></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="optional">
+					<p><strong>Example:</strong> You want to break down a locked door. The GM calls on you to make a PHY + Athletics [3] Check. You add up the proper Attribute and Skills to make your Dice Pool, apply any modifiers, roll your dice and count your Hits. You rolled exactly 3 Hits! The door comes down without too much hassle.</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12" id="bottombar">
+		</div>
+	</div>
+</div>
+<script>
+	function triggerExpand() {
+		expandAndHighlight('Introduction','DiceAndChecks','coreRulesToggle')
+	}
+</script>
+</body>
+</html>
