@@ -38,6 +38,7 @@
 						<li><a href="core_rules/dice_and_checks.html#dicepools">Dice Pools</a></li>
 						<li><a href="core_rules/dice_and_checks.html#hits">Hits</a></li>
 						<li><a href="core_rules/dice_and_checks.html#checks">Checks</a></li>
+						<li><a href="core_rules/dice_and_checks.html#opposedchecks">Opposed Checks</a></li>
 					</ul>
 				</div>
 
@@ -94,7 +95,100 @@
 					</tbody>
 				</table>
 				<div class="optional">
-					<p><strong>Example:</strong> You want to break down a locked door. The GM calls on you to make a PHY + Athletics [3] Check. You add up the proper Attribute and Skills to make your Dice Pool, apply any modifiers, roll your dice and count your Hits. You rolled exactly 3 Hits! The door comes down without too much hassle.</p>
+					<p><strong>Example:</strong> You want to break down a locked door. The GM calls on you to make a PHY + Athletics (3) Check. You add up the proper Attribute and Skills to make your Dice Pool, apply any modifiers, roll your dice and count your Hits. You rolled exactly 3 Hits! The door comes down without too much hassle.</p>
+				</div>
+				<p>Checks should only be called when failure is possible and meaningful. Routine actions done under normal circumstances should not require a Check.</p>
+
+				<h2 id="opposedchecks">Opposed Checks</h2>
+				<p>When one creature's action is directly opposed by another, both creatures make a Check. The creature with more Hits wins. The difference betweens their results is called <strong>Net Hits.</strong>
+				<div class="optional">
+					<p><strong>Example:</strong> You are attacking a wolf. You score 4 Hits on your attack Check, and the wolf scores 2 Hits on its dodge Check. You win the Check with 2 Net Hits.</p>
+				</div>
+				<p>When the two creatures score the same number of Hits, they tie. Unless otherwise stated, a tie favors the defender or otherwise preserves the current situation.</p>
+
+				<h2 id="extendedchecks">Extended Checks</h2>
+				<p>Sometimes tasks are too complex or time-consuming to resolve with a single Check. These are resolved as <strong>Extended Checks.</strong> An Extended Check has a Threshold and an <strong>Interval.</strong> You make the associated Check once each Interval and add reduce the Threshold by your total. When you accumulated Hits equal or exceeds the Threshold, the task is completed.</p>
+				<p>Each time you make a Check as part of an Extended Check, you gain a <strong>-1 dice</strong> cumulative penalty for any subsequent Checks. If your Dice Pool is reduced to 0 before you complete the task, you fail.</p>
+				<table>
+					<tbody>
+						<tr>
+							<th>Threshold</th>
+							<th>Difficulty</th>
+							<th>Examples</th>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Routine</td>
+							<td><em>Replacing a wagon wheel, searching a tidy office</em></td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td>Standard</td>
+							<td><em>Repairing a damage suit of armor, creating a simple ritual circle</em></td>
+						</tr>
+						<tr>
+							<td>15</td>
+							<td>Difficult</td>
+							<td><em></em></td>
+						</tr>
+						<tr>
+							<td>24</td>
+							<td>Formidable</td>
+							<td><em>Creating a new spell, designing a complex seige weapon</em></td>
+						</tr>
+						<tr>
+							<td>40+</td>
+							<td>Extraordinary</td>
+							<td><em>Creating a universal theory of magic, navigating a collapsing civilization back into prosperity</em></td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<tbody>
+						<tr>
+							<th>Interval</th>
+							<th>Pace</th>
+							<th>Examples</th>
+						</tr>
+						<tr>
+							<td>1 Round</td>
+							<td>Fast</td>
+							<td><em></em></td>
+						</tr>
+						<tr>
+							<td>1 Minute</td>
+							<td>Quick</td>
+							<td><em></em></td>
+						</tr>
+						<tr>
+							<td>30 Minutes</td>
+							<td>Average</td>
+							<td><em></em></td>
+						</tr>
+						<tr>
+							<td>1 Hour</td>
+							<td>Long</td>
+							<td><em></em></td>
+						</tr>
+						<tr>
+							<td>1 Day</td>
+							<td>Consuming</td>
+							<td><em></em></td>
+						</tr>
+						<tr>
+							<td>1 Week</td>
+							<td>Exhaustive</td>
+							<td><em></em></td>
+						</tr>
+						<tr>
+							<td>1 Month</td>
+							<td>Herculean</td>
+							<td><em></em></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="optional">
+					<p><strong>Example:</strong> You are repairing a damage suit of chainmail. The GM calls for an ACU + Smithing (9, 1 Hour) Extended Check. Each hour you make the check. Once your accumulate 12 Hits, the repairs are complete, assuming you don't run out of dice.</p>
 				</div>
 
 			</div>

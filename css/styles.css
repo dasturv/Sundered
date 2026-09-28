@@ -15,7 +15,7 @@ body {
 }
 
 #header {
-	margin: 8px 10px 5px 10px;
+	margin: 10px 10px 7px 10px;
 	height: auto;
 }
 
@@ -31,6 +31,11 @@ h1 {
 	text-decoration: none;
 	font-weight: bold;
 	width: auto !important;
+}
+
+#topbar h1 {
+	font-family: "Metamorphous", serif;
+	margin: 0px;
 }
 
 .content table {
