@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sundered</title>
+	<title>Sundered - Dice and Checks</title>
 	<base href="../">
 	<link rel="shortcut icon" type="image/png" href="favicon.png">
 	<div id="head-placeholder"></div>
@@ -38,7 +38,9 @@
 						<li><a href="core_rules/dice_and_checks.html#dicepools">Dice Pools</a></li>
 						<li><a href="core_rules/dice_and_checks.html#hits">Hits</a></li>
 						<li><a href="core_rules/dice_and_checks.html#checks">Checks</a></li>
+						<li><a href="core_rules/dice_and_checks.html#mishaps">Mishaps</a></li>
 						<li><a href="core_rules/dice_and_checks.html#opposedchecks">Opposed Checks</a></li>
+						<li><a href="core_rules/dice_and_checks.html#extendedchecks">Extended Checks</a></li>
 					</ul>
 				</div>
 
@@ -98,6 +100,16 @@
 					<p><strong>Example:</strong> You want to break down a locked door. The GM calls on you to make a PHY + Athletics (3) Check. You add up the proper Attribute and Skills to make your Dice Pool, apply any modifiers, roll your dice and count your Hits. You rolled exactly 3 Hits! The door comes down without too much hassle.</p>
 				</div>
 				<p>Checks should only be called when failure is possible and meaningful. Routine actions done under normal circumstances should not require a Check.</p>
+
+				<h2 id="limits">Limits</h2>
+				<p>Most Checks have a maximum number of Hits you can score, called a Limit. You apply any applicable Limits after the Check has been rolled. The most common Limits are <a href="characters/derived_statistics.html#limits">Physical and Mental Limits</a>, derived from a character's Attributes.</p>
+				<div class="optional">
+					<p><strong>Example:</strong> You are making a PHY + Athletics (3) Check. You have a Physical Limit of 4, so no matter how many 5 or 6s you roll, you cannot score more than 4 Hits.</p>
+				</div>
+				<p>If multiple limits would be applied to a Check, select the lowest.</p>
+
+				<h2 id="mishaps">Mishaps</h2>
+				<p>When a Check is failed and at least half of the dice rolled (rounded up) show a 1, a Mishap occurs. A Mishap introduces an additional complication appropriate to the action, such as attracting unwanted attention, damaging equipment or placing oneself in danger. A successful Check never causes a Mishap, regardless of how many 1s are rolled.</p>
 
 				<h2 id="opposedchecks">Opposed Checks</h2>
 				<p>When one creature's action is directly opposed by another, both creatures make a Check. The creature with more Hits wins. The difference betweens their results is called <strong>Net Hits.</strong>
@@ -190,7 +202,7 @@
 				<div class="optional">
 					<p><strong>Example:</strong> You are repairing a damage suit of chainmail. The GM calls for an ACU + Smithing (9, 1 Hour) Extended Check. Each hour you make the check. Once your accumulate 12 Hits, the repairs are complete, assuming you don't run out of dice.</p>
 				</div>
-
+				
 			</div>
 		</div>
 	</div>
@@ -201,7 +213,7 @@
 </div>
 <script>
 	function triggerExpand() {
-		expandAndHighlight('Introduction','DiceAndChecks','coreRulesToggle')
+		expandAndHighlight('CoreRules','DiceAndChecks','coreRulesToggle')
 	}
 </script>
 </body>

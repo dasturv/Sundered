@@ -189,6 +189,11 @@ th, td {
 	display: table-row;
 }
 
+.content h4 {
+	color: #7A302C;
+	margin: 20px 0px 5px 0px;
+}
+
 .highlight {
 	font-weight: 600;
 }
@@ -232,7 +237,15 @@ h4 {
 	color: #292824;
 }
 
-.optional {
+.small-table {
+	width: fit-content !important;
+}
+
+.small-table tr {
+	text-align: center;
+}
+
+.optional, .equation {
 	border-radius: 2px;
 	box-shadow: 0px 0px 3px gray;
 	margin-right: 2px;
@@ -246,6 +259,10 @@ h4 {
 .optional p {
 	font-size: 18px;
 	font-style: italic;
+	margin-bottom: 3px;
+}
+
+.equation p {
 	margin-bottom: 3px;
 }
 

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sundered - Derived Statistics</title>
+	<base href="../">
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
+	<div id="head-placeholder"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script>
+		$(function() {
+			$('#head-placeholder').load('navigation/head_content.html');
+			$('#topbar').load('navigation/topbar.html');
+			$('#sidebar').load('navigation/sidebar.html');
+			$('#bottombar').load('navigation/bottombar.html');
+		});
+	</script>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row bg-red">
+		<div class="col-12" id="topbar">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-2 col-md-3 bg-dark">
+			<nav class="navbar" id="sidebar">
+			</nav>
+		</div>
+		<div class="col-lg-10 col-md-9 content">
+			<h1>Derived Statistics</h1>
+
+			<div class="clearfix">
+				<div class="toc float-end">
+					<h5>Table of Contents</h5>
+					<ul>
+						<li><a href="characters/derived_statistics.html#healthandoverflow">Health and Overflow</a></li>
+						<li><a href="characters/derived_statistics.html#initiative">Initiative</a></li>
+						<li><a href="characters/derived_statistics.html#limits">Physical and Mental Limits</a></li>
+					</ul>
+				</div>
+
+				<p>Below are several statistics that are derived from Attributes, Skills and other parts of character creation.</p>
+				<h2 id="healthandoverflow">Health and Overflow</h2>
+				<p>A character's maximum Health is calculated by adding their Endurance and Base Health together.</p>
+				<div class="equation">
+					<p><strong>Max Health</strong> = Base Health + END.</p>
+				</div>
+				<p>A creature's Base Health is decided by its size, as seen on the table below.</p>
+				<table class="small-table">
+					<tbody>
+						<tr>
+							<th>Size</th>
+							<th>Base Health</th>
+						</tr>
+						<tr>
+							<td>Small</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>Medium</td>
+							<td>9</td>
+						</tr>
+						<tr>
+							<td>Large</td>
+							<td>15</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>Health Overflow is 1/2 of your Maximum Health, rounded down.</p>
+
+				<h2 id="initiative">Initiative</h2>
+				<p>A character's initiative is equal to rolling 2d6 and adding both its Reflex and Awareness Attributes.</p>
+				<div class="equation">
+					<p><strong>Initiative</strong> = 2d6 + REF + AWR.</p>
+				</div>
+				<p>A Surprised character does not roll 2d6, instead only having REF + AWR for their Initiative.</p>
+
+				<h2 id="limits">Physical and Mental Limits</h2>
+				<p>Each character has a built-in Limit for most Checks. Split between Physical and Mental, these Limits apply to any Check using an Attribute in one of those categories. Your Limit is equal to the average between your four associated Attributes (rounded down), plus one.</p>
+				<div class="equation">
+					<p><strong>Physical Limit</strong> = [(PHY + FIN + REF + END) / 4] + 1</p>
+					<p><strong>Mental Limit</strong> = [(PRE + ACU + AWR + WIL) / 4] + 1</p>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12" id="bottombar">
+		</div>
+	</div>
+</div>
+<script>
+	function triggerExpand() {
+		expandAndHighlight('Characters','DerivedStatistics','charactersToggle')
+	}
+</script>
+</body>
+</html>

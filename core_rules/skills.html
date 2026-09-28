@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sundered - Skills</title>
+	<base href="../">
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
+	<div id="head-placeholder"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script>
+		$(function() {
+			$('#head-placeholder').load('navigation/head_content.html');
+			$('#topbar').load('navigation/topbar.html');
+			$('#sidebar').load('navigation/sidebar.html');
+			$('#bottombar').load('navigation/bottombar.html');
+		});
+	</script>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row bg-red">
+		<div class="col-12" id="topbar">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-2 col-md-3 bg-dark">
+			<nav class="navbar" id="sidebar">
+			</nav>
+		</div>
+		<div class="col-lg-10 col-md-9 content">
+			<h1>Skills</h1>
+
+			<div class="clearfix">
+				<div class="toc float-end">
+					<h5>Table of Contents</h5>
+					<ul>
+						<li><a href="core_rules/skills.html#specializations">Specializations</a></li>
+						<li><a href="core_rules/skills.html#untrainedskills">Untrained Skills</a></li>
+						<li><a href="core_rules/skills.html#listofskills">List of Skills</a></li>
+							<ul>
+								<li><a href="core_rules/skills.html#acrobatics">Acrobatics</a></li>
+								<li><a href="core_rules/skills.html#animalhandling">Animal Handling</a></li>
+								<li><a href="core_rules/skills.html#athletics">Athletics</a></li>
+								<li><a href="core_rules/skills.html#axes">Axes</a></li>
+								<li><a href="core_rules/skills.html#blades">Blades</a></li>
+								<li><a href="core_rules/skills.html#brawling">Brawling</a></li>
+								<li><a href="core_rules/skills.html#clubs">Clubs</a></li>
+								<li><a href="core_rules/skills.html#deception">Deception</a></li>
+								<li><a href="core_rules/skills.html#dodge">Dodge</a></li>
+								<li><a href="core_rules/skills.html#hammers">Hammers</a></li>
+								<li><a href="core_rules/skills.html#influence">Influence</a></li>
+								<li><a href="core_rules/skills.html#insight">Insight</a></li>
+								<li><a href="core_rules/skills.html#intimidation">Intimidation</a></li>
+								<li><a href="core_rules/skills.html#investigation">Investigation</a></li>
+								<li><a href="core_rules/skills.html#leadership">Leadership</a></li>
+								<li><a href="core_rules/skills.html#marksmanship">Marksmanship</a></li>
+								<li><a href="core_rules/skills.html#medicine">Medicine</a></li>
+								<li><a href="core_rules/skills.html#perception">Perception</a></li>
+								<li><a href="core_rules/skills.html#performance">Performance</a></li>
+								<li><a href="core_rules/skills.html#polearms">Polearms</a></li>
+								<li><a href="core_rules/skills.html#shields">Shields</a></li>
+								<li><a href="core_rules/skills.html#sleightofhand">Sleight of Hand</a></li>
+								<li><a href="core_rules/skills.html#spellcraft">Spellcraft</a></li>
+								<li><a href="core_rules/skills.html#stealth">Stealth</a></li>
+								<li><a href="core_rules/skills.html#survival">Survival</a></li>
+								<li><a href="core_rules/skills.html#throwing">Throwing</a></li>
+							</ul>
+						<li><a href="core_rules/skills.html#educationskills">Education Skills</a></li>
+					</ul>
+				</div>
+
+				<p>Skills represents a character's training, knowledge and practiced abilities. When making a <a href="core_rules/dice_and_checks.html">Check</a>, a Skill is usually combined with an appropriate <a href="core_rules/attributes.html">Attribute</a> to form a Dice Pool.</p>
+				<p>The Attribute used alongside a Skill depends on how the action is being performed. For example, PRE + Intimidation may be used to threaten someone, whereas PHY + Intimidation may be used to display physical dominance.</p>
+				
+				<h3 id="specializations">Specializations</h3>
+				<p>Specializations represent focused training within a broader Skill. Each Specialization is associated with a particular Skill and applies only when its specific area of expertise is relevant. You cannot have a Specialization in a Skill you have no Ranks in.</p>
+				<p>When making a Check to which one or more of your Specializations applies, you gain <strong>+2 dice.</strong></p>
+				<div class="optional">
+					<p><strong>Example:</strong> You have Blades 3 (Daggers). You would gain <strong>+2 dice</strong> when attacking with a dagger, but not with a longsword.</p>
+				</div>
+				<p>Specializations should represent a narrower field of expertise rather than an activity covered by the entire Skill. The Specializations listed for each Skill are examples rather than an exhaustive list.</p>
+
+				<h3 id="untrainedskills">Untrained Skills</h3>
+				<p>Some Skills are more difficult to use without proper training. These are marked <strong>Untrained (−2)</strong>. When making a Check using one of these Skills while you have 0 Ranks in it, you suffer <strong>−2 dice</strong>. Other Skills can be used at 0 Ranks without penalty.</p>
+
+				<h2 id="listofskills">List of Skills</h2>
+
+				<h4 id="acrobatics">Acrobatics</h4>
+				<p>Training in balance, tumbling, controlled falls, and precise bodily movement.</p>
+				<p><strong>Specializations:</strong> Balance, Contortion, Falling</p>
+
+				<h4 id="animalhandling">Animal Handling</h4>
+				<p><strong>Untrained (-2)</strong> Training in calming, training, riding and caring for animals.</p>
+				<p><strong>Specializations:</strong> Husbandry, Riding, Taming, Training</p>
+
+				<h4 id="athletics">Athletics</h4>
+				<p>Training in strenuous physical movement and feats of athletic ability.</p>
+				<p><strong>Specializations:</strong> Climbing, Jumping, Running, Swimming</p>
+
+				<h4 id="axes">Axes</h4>
+				<p><strong>Untrained (-2)</strong> Training with chopping and hooked weapons, from small hatchets to heavy battleaxes.</p>
+				<p><strong>Specializations:</strong> Battleaxes, Greataxes, Handaxes</p>
+
+				<h4 id="blades">Blades</h4>
+				<p><strong>Untrained (-2)</strong> Training with knives and swords of all sizes, emphasizing the use of an edged or pointed blade.</p>
+				<p><strong>Specializations:</strong> Daggers, Longsword, Rapiers</p>
+
+				<h4 id="brawling">Brawling</h4>
+				<p><strong>Untrained (-2)</strong> Training in the use of unarmed strikes, grappling, wrestling and improvised weapons.</p>
+				<p><strong>Specializations:</strong> Improvised Weapons, Unarmed Strikes, Grappling</p>
+
+				<h4 id="clubs">Clubs</h4>
+				<p><strong>Untrained (-2)</strong> Training with impact weapons designed to bludgeon or strike with heavy force.</p>
+				<p><strong>Specializations:</strong> Clubs, Maces, Whips</p>
+
+				<h4 id="deception">Deception</h4>
+				<p>Training in misleading others through lies, misdirection, disguise and manipulation.</p>
+				<p><strong>Specializations:</strong> Lying, Impersonation, Disguise</p>
+
+				<h4 id="dodge">Dodge</h4>
+				<p>Training in quickly avoiding attacks, hazards, and other immediate dangers.</p>
+				<p><strong>Specializations:</strong> Melee, Projectiles, Magic</p>
+
+				<h4 id="hammers">Hammers</h4>
+				<p><strong>Untrained (-2)</strong> Training with weapons whose power comes from concentrated heavy force.</p>
+				<p><strong>Specializations:</strong> Mauls, Light Hammers, Lucernes</p>
+
+				<h4 id="influence">Influence</h4>
+				<p>Training in changing the opinions or behavior of others through persuasion and negotiation.</p>
+				<p><strong>Specializations:</strong> Diplomacy, Bartering, Seduction</p>
+
+				<h4 id="insight">Insight</h4>
+				<p>Training in interpreting behavior, emotions, intentions, and subtle social cues.</p>
+				<p><strong>Specializations:</strong> Deception, Emotions, Motives</p>
+
+				<h4 id="intimidation">Intimidation</h4>
+				<p>Training in influencing others through threats, fear, and displays of dominance.</p>
+				<p><strong>Specializations:</strong> Interrogation, Physical Dominance, Threats</p>
+
+				<h4 id="investigation">Investigation</h4>
+				<p>Training in methodical searching, deduction, and drawing conclusions from available evidence.</p>
+				<p><strong>Specializations:</strong> Crime Scenes, Research, Reasoning</p>
+
+				<h4 id="skill">Leadership</h4>
+				<p><strong>Untrained (-2)</strong> Training in directing, organizing, teaching and inspiring others.</p>
+				<p><strong>Specializations:</strong> Command, Coordination, Teaching</p>
+
+				<h4 id="marksmanship">Marksmanship</h4>
+				<p><strong>Untrained (-2)</strong> Training in ranged weapons, including bows, crossbows, slings, and similar projectile weapons.</p>
+				<p><strong>Specializations:</strong> Bows, Crossbows, Blowguns</p>
+
+				<h4 id="medicine">Medicine</h4>
+				<p><strong>Untrained (-2)</strong> Training in diagnosing and treating injuries, diseases, and other physical ailments.</p>
+				<p><strong>Specializations:</strong> Disease, First Aid, Surgery, Toxins</p>
+
+				<h4 id="perception">Perception</h4>
+				<p>Training in noticing details and detecting things through the senses.</p>
+				<p><strong>Specializations:</strong> Hearing, Sight, Smell</p>
+
+				<h4 id="performance">Performance</h4>
+				<p><strong>Untrained (-2)</strong> Training in entertaining or captivating an audience through artistic expression.</p>
+				<p><strong>Specializations:</strong> Acting, Dance, Music, Oratory, Singing</p>
+
+				<h4 id="polearms">Polearms</h4>
+				<p><strong>Untrained (-2)</strong> Training with long-hafted weapons used for reach, thrusting, sweeping attacks, and controlling distance.</p>
+				<p><strong>Specializations:</strong> Glaives, Halberds, Spears</p>
+
+				<h4 id="shields">Shields</h4>
+				<p><strong>Untrained (-2)</strong> Training in the active use of shields to intercept and deflect incoming attacks.</p>
+				<p><strong>Specializations:</strong> Bucklers, Round Shields, Tower Shields</p>
+
+				<h4 id="sleightofhand">Sleight of Hand</h4>
+				<p>Training in subtle hand movements, manual tricks, and manipulating objects without being noticed.</p>
+				<p><strong>Specializations:</strong> Concealment, Pickpocketing, Parlor Tricks</p>
+
+				<h4 id="spellcraft">Spellcraft</h4>
+				<p><strong>Untrained (-2)</strong> Training in the practicial manipulation and control of magic, including casting and modifying spells. Magical traditions cannot be chosen as Spellcraft Specializations.</p>
+				<p><strong>Specializations:</strong> Countermagic, Spell Attacks, Rituals</p>
+
+				<h4 id="stealth">Stealth</h4>
+				<p>Training in moving, hiding, and acting without being detected.</p>
+				<p><strong>Specializations:</strong> Camouflage, Shadowing, Sneaking</p>
+
+				<h4 id="survival">Survival</h4>
+				<p><strong>Untrained (-2)</strong> Training in navigating and surviving dangerous or uncivilized environments.</p>
+				<p><strong>Specializations:</strong> Foraging, Navigation, Tracking, Trapping</p>
+
+				<h4 id="throwing">Throwing</h4>
+				<p>Training in throwing weapons and weapons designed to enhance the natural throwing motions.</p>
+				<p><strong>Specializations:</strong> Javelins, Slings, Throwing Knives</p>
+
+				<h2 id="educationskills">Education Skills</h2>
+				<p>Some Skills come about from training in a particular trade, topic, or occupation. Education Skills come in one of three categories: Craft Skills, Profession Skills and Lore Skills. Each Education Skill is learned and advanced seperately.</p>
+
+				<p>The lists of Education Skills are intentionally open-ended. Players and GMs may introduce additional Skills appropriate to a character's background and the setting. You can also still gain Specializations in Education Skills.</p>
+				<p>All Education Skills have <strong>Untrained (-2)</strong>.</p>
+
+				<h4>Craft Skills</h4>
+				<p> Craft Skills cover the creation, repair, and evaluation of particular types of goods, such as Smithing, Carpentry, Masonry, Tailoring or Cooking. Enchanting and Alchemy are both Craft Skills.</p>
+
+				<h4>Profession Skills</h4>
+				<p> Profession Skills cover the specialized knowledge and practical experience of particular occupations, such as Sailor, Farmer, Miner, Merchant or Thief.</p>
+
+				<h4>Lore Skills</h4>
+				<p> Lore Skills cover the formal education of specific topics, such as History, Culture, Natural World, Linguistics and Arcana.</p>
+
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12" id="bottombar">
+		</div>
+	</div>
+</div>
+<script>
+	function triggerExpand() {
+		expandAndHighlight('CoreRules','Skills','coreRulesToggle')
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sundered - Spending Luck</title>
+	<base href="../">
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
+	<div id="head-placeholder"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script>
+		$(function() {
+			$('#head-placeholder').load('navigation/head_content.html');
+			$('#topbar').load('navigation/topbar.html');
+			$('#sidebar').load('navigation/sidebar.html');
+			$('#bottombar').load('navigation/bottombar.html');
+		});
+	</script>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row bg-red">
+		<div class="col-12" id="topbar">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-2 col-md-3 bg-dark">
+			<nav class="navbar" id="sidebar">
+			</nav>
+		</div>
+		<div class="col-lg-10 col-md-9 content">
+			<h1>Spending Luck</h1>
+
+			<div class="clearfix">
+				<div class="toc float-end">
+					<h5>Table of Contents</h5>
+					<ul>
+						<li><a href="core_rules/spending_luck.html#luckpoints">Luck Points</a></li>
+						<li><a href="core_rules/spending_luck.html#spendingluck">Spending Luck</a></li>
+							<ul>
+								<li><a href="core_rules/spending_luck.html#strokeofluck">Stroke of Luck</a></li>
+								<li><a href="core_rules/spending_luck.html#avoidmisfortune">Avoid Misfortune</a></li>
+								<li><a href="core_rules/spending_luck.html#cheatdeath">Cheat Death</a></li>
+							</ul>
+					</ul>
+				</div>
+
+				<p>Unlike the other Attributes, Luck is very rarely used in Checks. Instead, they grant the ability to alter fate in the form of Luck Points.</p>
+				<h2 id="luckpoints">Luck Points</h2>
+				<p>A character has access to a number of Luck Points equal to their Luck Attribute. These can be spent in a number of different ways. A character recovers one expended Luck Point each time they complete a <a href="combat/health_and_recovery.html#rests">Rest</a>. A character can never have more Luck Points than their Luck Attribute.</p>
+
+				<h2 id="spendingluck">Spending Luck</h2>
+				<p>There are several ways to spend Luck Points, and even your Luck Attribute itself, as seen below.</p>
+				<ul>
+					<li id="strokeofluck"><strong>Stroke of Luck.</strong> After making a Check, you may spend 1 Luck Point to reroll any number of the d6s, potentially increasing your number of Hits. You can use this only once per Check or Extended Check.</li>
+					<li id="avoidmisfortune"><strong>Avoid Misfortune.</strong> When you would suffer a Mishap, you may spend 1 Luck Point to avoid the consequences of the Mishap. You still fail the Check.</li>
+					<li id="cheatdeath"><strong>Cheat Death.</strong> When you would die, you may <strong>permanently</strong> reduce your Luck Attribute by one to instead not die. You become Stabilized, but you still suffer all other consequences of your injuries.</li>
+				</ul>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12" id="bottombar">
+		</div>
+	</div>
+</div>
+<script>
+	function triggerExpand() {
+		expandAndHighlight('CoreRules','SpendingLuck','coreRulesToggle')
+	}
+</script>
+</body>
+</html>
