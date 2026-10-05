@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sundered</title>
+	<title>Sundered - Traits</title>
 	<base href="../">
 	<link rel="shortcut icon" type="image/png" href="favicon.png">
 	<div id="head-placeholder"></div>
@@ -14,6 +14,10 @@
 			$('#topbar').load('navigation/topbar.html');
 			$('#sidebar').load('navigation/sidebar.html');
 			$('#bottombar').load('navigation/bottombar.html');
+			$('#novice-pane').load('magic/spells/novice_spells.html');
+			$('#adept-pane').load('magic/spells/adept_spells.html');
+			$('#expert-pane').load('magic/spells/expert_spells.html');
+			$('#master-pane').load('magic/spells/master_spells.html');
 		});
 	</script>
 </head>
@@ -29,24 +33,57 @@
 			</nav>
 		</div>
 		<div class="col-lg-10 col-md-9 content">
-			<h1>Title</h1>
+			<h1>
+				Traits
+			</h1>
 
-			<div class="clearfix">
-				<div class="toc float-end">
-					<h5>Table of Contents</h5>
-					<ul>
-						<li><a href="#">One</a></li>
-							<ul>
-								<li><a href="#">Two</a></li>
-							</ul>
-						<li><a href="#">Three</a></li>
-						<li><a href="#">Four</a></li>
-					</ul>
-				</div>
+			<!-- Trait Navigation Tabs -->
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+			  <li class="nav-item" role="presentation">
+			    <button class="nav-link active" id="novice" data-bs-toggle="tab" data-bs-target="#novice-pane" type="button" role="tab" aria-controls="novice-pane" aria-selected="true"><em>Novice</em></button>
+			  </li>
+			  <li class="nav-item" role="presentation">
+			    <button class="nav-link" id="adept" data-bs-toggle="tab" data-bs-target="#adept-pane" type="button" role="tab" aria-controls="adept-pane" aria-selected="false"><em>Adept</em></button>
+			  </li>
+			  <li class="nav-item" role="presentation">
+			    <button class="nav-link" id="expert" data-bs-toggle="tab" data-bs-target="#expert-pane" type="button" role="tab" aria-controls="expert-pane" aria-selected="false"><em>Expert</em></button>
+			  </li>
+			  <li class="nav-item" role="presentation">
+			    <button class="nav-link" id="master" data-bs-toggle="tab" data-bs-target="#master-pane" type="button" role="tab" aria-controls="master-pane" aria-selected="false"><em>Master</em></button>
+			  </li>
+			</ul>
 
-				<h2>Subtitle</h2>
+			<!-- Trait Tables -->
+			<div class="tab-content" id="myTabContent">
+			  <!-- Novice Spells -->
+			  <div class="tab-pane active" id="novice-pane" role="tabpanel" aria-labelledby="novice" tabindex="0">
+			  </div>
+
+			  <!-- Adept Spells -->
+			  <div class="tab-pane" id="adept-pane" role="tabpanel" aria-labelledby="adept" tabindex="0">
+			  </div>
+
+			  <!-- Expert Spells -->
+			  <div class="tab-pane" id="expert-pane" role="tabpanel" aria-labelledby="expert" tabindex="0">
+			  </div>
+
+			  <!-- Master Spells -->
+			  <div class="tab-pane" id="master-pane" role="tabpanel" aria-labelledby="master" tabindex="0">
+			  </div>
 			</div>
-		</div>
+
+			<!-- Filter Buttons -->
+			<div id="myBtnContainer">
+				<div>
+					<button class="btn sorcery active" onclick="filterSelection('sorcery')">Sorceries</button>
+					<button class="btn miracle" onclick="filterSelection('miracle')">Miracles</button>
+					<button class="btn invocation" onclick="filterSelection('invocation')">Invocations</button>
+					<button class="btn hex" onclick="filterSelection('hex')">Hexes</button>
+					<button class="btn mystery" onclick="filterSelection('mystery')">Mysteries</button>
+					<button class="btn charm" onclick="filterSelection('charm')">Charms</button>
+					<button class="btn manifestation" onclick="filterSelection('manifestation')">Manifestations</button>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="row">
@@ -56,8 +93,29 @@
 </div>
 <script>
 	function triggerExpand() {
-		expandAndHighlight('Characters','Traits','charactersToggle')
+		expandAndHighlight('Magic','Spells','magicToggle')
 	}
 </script>
 </body>
+<footer>
+	<script type="text/javascript">
+		const queryString = window.location.search;
+		console.log(queryString)
+		const urlParams = new URLSearchParams(queryString);
+		console.log(urlParams)
+		const param = urlParams.get('spellfilter')
+		console.log(param)
+
+		// Add active class to the current control button (highlight it)
+		var btnContainer = document.getElementById("myBtnContainer");
+		var btns = btnContainer.getElementsByClassName("btn");
+		for (var i = 0; i < btns.length; i++) {
+		  btns[i].addEventListener("click", function() {
+		    var current = btnContainer.getElementsByClassName("active");
+		    current[0].className = current[0].className.replace(" active", "");
+		    this.className += " active";
+		  });
+		}
+	</script>
+</footer>
 </html>
