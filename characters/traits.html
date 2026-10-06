@@ -14,10 +14,7 @@
 			$('#topbar').load('navigation/topbar.html');
 			$('#sidebar').load('navigation/sidebar.html');
 			$('#bottombar').load('navigation/bottombar.html');
-			$('#novice-pane').load('magic/spells/novice_spells.html');
-			$('#adept-pane').load('magic/spells/adept_spells.html');
-			$('#expert-pane').load('magic/spells/expert_spells.html');
-			$('#master-pane').load('magic/spells/master_spells.html');
+			$('#traitsTable').load('characters/traits_list.html');
 		});
 	</script>
 </head>
@@ -36,54 +33,24 @@
 			<h1>
 				Traits
 			</h1>
+			<p>Traits represent unusual training, knowledge, qualities or parts of physiology that makes you character unique. Traits are core to determining what your character can do, whereas Skills and Attributes determine how well they do.</p>
 
-			<!-- Trait Navigation Tabs -->
-			<ul class="nav nav-tabs" id="myTab" role="tablist">
-			  <li class="nav-item" role="presentation">
-			    <button class="nav-link active" id="novice" data-bs-toggle="tab" data-bs-target="#novice-pane" type="button" role="tab" aria-controls="novice-pane" aria-selected="true"><em>Novice</em></button>
-			  </li>
-			  <li class="nav-item" role="presentation">
-			    <button class="nav-link" id="adept" data-bs-toggle="tab" data-bs-target="#adept-pane" type="button" role="tab" aria-controls="adept-pane" aria-selected="false"><em>Adept</em></button>
-			  </li>
-			  <li class="nav-item" role="presentation">
-			    <button class="nav-link" id="expert" data-bs-toggle="tab" data-bs-target="#expert-pane" type="button" role="tab" aria-controls="expert-pane" aria-selected="false"><em>Expert</em></button>
-			  </li>
-			  <li class="nav-item" role="presentation">
-			    <button class="nav-link" id="master" data-bs-toggle="tab" data-bs-target="#master-pane" type="button" role="tab" aria-controls="master-pane" aria-selected="false"><em>Master</em></button>
-			  </li>
+			<h2>Gaining Traits</h2>
+			<p>Traits are primarily obtained during <a href="characters/character_creation.html">character creation</a> using the XP granted from your Ancestry and Background. Though, you are able to gain additional Traits throughout play via <a href="characters/advancement.html">Advancement.</a> Purchasing Traits follows the following rules:</p>
+			<ul>
+				<li>To purchase a Trait or increase its rank by 1, you must spend XP equal to the Trait's XP cost. You cannot increase a Trait's rank above its max rank. Increasing a Trait's rank still counts towards the total XP spent on a single trait during character creation.</li>
+				<li>You cannot purchase a Trait you do not meet the requirements for. This only applies to purchasing Traits: if another feature such as your Ancestry grants a Trait, you do not need to meet any requirements.</li>
+				<li>Unless otherwise stated, you cannot purchase more than one instance of a Trait.</li>
 			</ul>
 
-			<!-- Trait Tables -->
-			<div class="tab-content" id="myTabContent">
-			  <!-- Novice Spells -->
-			  <div class="tab-pane active" id="novice-pane" role="tabpanel" aria-labelledby="novice" tabindex="0">
-			  </div>
+			<h2>Negative Traits</h2>
+			<p>Some Traits offer disadvantages instead of advantages. These Negative Traits can be chosen during character creation to gain additional XP, up to a maximum of 15 XP. Negative Traits gained throughout gameplay do not grant additional XP. To remove a Negative Trait, you may use the rules of <a href="characters/advancement.html">Advancement</a>, spending XP to remove a Trait instead of purchasing it.</p>
+			<p>Negative Traits are meant to be meaningful downsides. If a specific Trait would have little to no impact for your character, the GM can disallow it.</p>
 
-			  <!-- Adept Spells -->
-			  <div class="tab-pane" id="adept-pane" role="tabpanel" aria-labelledby="adept" tabindex="0">
-			  </div>
+			<h2>Trait List</h2>
 
-			  <!-- Expert Spells -->
-			  <div class="tab-pane" id="expert-pane" role="tabpanel" aria-labelledby="expert" tabindex="0">
-			  </div>
-
-			  <!-- Master Spells -->
-			  <div class="tab-pane" id="master-pane" role="tabpanel" aria-labelledby="master" tabindex="0">
-			  </div>
-			</div>
-
-			<!-- Filter Buttons -->
-			<div id="myBtnContainer">
-				<div>
-					<button class="btn sorcery active" onclick="filterSelection('sorcery')">Sorceries</button>
-					<button class="btn miracle" onclick="filterSelection('miracle')">Miracles</button>
-					<button class="btn invocation" onclick="filterSelection('invocation')">Invocations</button>
-					<button class="btn hex" onclick="filterSelection('hex')">Hexes</button>
-					<button class="btn mystery" onclick="filterSelection('mystery')">Mysteries</button>
-					<button class="btn charm" onclick="filterSelection('charm')">Charms</button>
-					<button class="btn manifestation" onclick="filterSelection('manifestation')">Manifestations</button>
-				</div>
-			</div>
+			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Traits..">
+			<div id="traitsTable"></div>
 		</div>
 	</div>
 	<div class="row">
@@ -93,28 +60,32 @@
 </div>
 <script>
 	function triggerExpand() {
-		expandAndHighlight('Magic','Spells','magicToggle')
+		expandAndHighlight('Characters','Traits','charactersToggle')
 	}
 </script>
 </body>
 <footer>
-	<script type="text/javascript">
-		const queryString = window.location.search;
-		console.log(queryString)
-		const urlParams = new URLSearchParams(queryString);
-		console.log(urlParams)
-		const param = urlParams.get('spellfilter')
-		console.log(param)
+	<script>
+		function myFunction() {
+		  // Declare variables
+		  var input, filter, table, tr, td, i, txtValue;
+		  input = document.getElementById("myInput");
+		  filter = input.value.toUpperCase();
+		  table = document.getElementById("traitsTable");
+		  tr = table.getElementsByTagName("tr");
 
-		// Add active class to the current control button (highlight it)
-		var btnContainer = document.getElementById("myBtnContainer");
-		var btns = btnContainer.getElementsByClassName("btn");
-		for (var i = 0; i < btns.length; i++) {
-		  btns[i].addEventListener("click", function() {
-		    var current = btnContainer.getElementsByClassName("active");
-		    current[0].className = current[0].className.replace(" active", "");
-		    this.className += " active";
-		  });
+		  // Loop through all table rows, and hide those who don't match the search query
+		  for (i = 0; i < tr.length; i++) {
+		    td = tr[i].getElementsByTagName("td")[0];
+		    if (td) {
+		      txtValue = td.textContent || td.innerText;
+		      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+		        tr[i].style.display = "";
+		      } else {
+		        tr[i].style.display = "none";
+		      }
+		    }
+		  }
 		}
 	</script>
 </footer>

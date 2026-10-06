@@ -18,23 +18,6 @@ function toggleSideBar() {
 	$(".bg-dark:first-of-type").toggleClass("t-none");
 }
 
-function filterSelection(c) {
-	var x, i, j, p;
-	p = document.getElementsByClassName("tab-pane")
-	for (j = 0; j < p.length; j++) {
-		x = p[j].getElementsByClassName("spell");
-		// Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  		for (i = 0; i < x.length; i++) {
-    		w3RemoveClass(x[i], "show");
-    		if (p[j].getElementsByClassName(c).length > 0) {
-    			if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-    		} else {
-    			if (x[i].className.indexOf("null") > -1) w3AddClass(x[i], "show");
-    		}
-		}
-  	}
-}
-
 // Show filtered elements
 function w3AddClass(element, name) {
   var i, arr1, arr2;

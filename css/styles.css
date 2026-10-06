@@ -144,6 +144,14 @@ th, td {
 	font-weight: 600;
 }
 
+.content input {
+	background-color: #faf9f5;
+	margin-bottom: 10px;
+	padding: 3px;
+	border-radius: 1px;
+	border-color: #E8DFC9;
+}
+
 .toc {
 	border-radius: 2px;
 	box-shadow: 0px 0px 3px gray;

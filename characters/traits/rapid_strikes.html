@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sundered - Rapid Strikes</title>
+	<base href="../../">
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
+	<div id="head-placeholder"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script>
+		$(function() {
+			$('#head-placeholder').load('navigation/head_content.html');
+			$('#topbar').load('navigation/topbar.html');
+			$('#sidebar').load('navigation/sidebar.html');
+			$('#bottombar').load('navigation/bottombar.html');
+		});
+	</script>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row bg-red">
+		<div class="col-12" id="topbar">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-2 col-md-3 bg-dark">
+			<nav class="navbar" id="sidebar">
+			</nav>
+		</div>
+		<div class="col-lg-10 col-md-9 content">
+			<h1>Rapid Strikes</h1>
+			<p><em>Requirements: FIN 3</em><br>
+			<strong>XP Cost:</strong> 15 XP<br>
+			<strong>Max Rank:</strong> I</p>
+			<p><em>Maneuver.</em> You have learned how to trade speed for accuracy. Whenever you take the Attack action using a weapon, you may make two attacks instead of one. When you do so, you suffer a -2 dice penalty to both attacks. You still suffer penalties for repeated attacks as normal.</p>
+		</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12" id="bottombar">
+		</div>
+	</div>
+</div>
+<script>
+	function triggerExpand() {
+		expandAndHighlight('Characters','Traits','charactersToggle')
+	}
+</script>
+</body>
+</html>
