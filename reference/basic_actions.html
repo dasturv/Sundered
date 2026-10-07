@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sundered</title>
+	<title>Sundered - Basic Actions</title>
 	<base href="../">
 	<link rel="shortcut icon" type="image/png" href="favicon.png">
 	<div id="head-placeholder"></div>
@@ -28,23 +28,31 @@
 			<nav class="navbar" id="sidebar">
 			</nav>
 		</div>
-		<div class="col-lg-10 col-md-9 content" data-status="draft">
-			<h1>Title</h1>
+		<div class="col-lg-10 col-md-9 content" data-status="canon">
+			<h1>Basic Actions</h1>
 
 			<div class="clearfix">
 				<div class="toc float-end">
 					<h5>Table of Contents</h5>
 					<ul>
-						<li><a href="#">One</a></li>
-							<ul>
-								<li><a href="#">Two</a></li>
-							</ul>
-						<li><a href="#">Three</a></li>
-						<li><a href="#">Four</a></li>
+						<li><a href="reference/basic_actions.html#attack">Attack</a></li>
+						<li><a href="reference/basic_actions.html#block">Block</a></li>
+						<li><a href="reference/basic_actions.html#dash">Dash</a></li>
+						<li><a href="reference/basic_actions.html#move">Move</a></li>
 					</ul>
 				</div>
 
-				<h2>Subtitle</h2>
+				<h2 id="attack">Attack — 1 AP</h2>
+				<p>You make an attack with a weapon you are wielding. See <a href="combat/attacks_and_damage.html#attacking">Attacking</a> for more details.</p>
+
+				<h2 id="block">Block — 1 AP</h2>
+				<p>As a Reaction when you would be hit by an attack, you attempt to block with a weapon or shield you are wielding. See <a href="combat/attacks_and_damage.html#blocking">Blocking</a> for more details.</p>
+
+				<h2 id="dash">Dash — 1 AP</h2>
+				<p>You move up to 1.5x your speed (rounded down), but gain 1 <a href="reference/keywords.html#exertion">Exertion</a>. See <a href="combat/movement.html">Movement</a> for more details.</p>
+
+				<h2 id="move">Move — 1 AP</h2>
+				<p>You move up to your speed. See <a href="combat/movement.html">Movement</a> for more details.</p>
 			</div>
 		</div>
 		</div>
@@ -56,7 +64,7 @@
 </div>
 <script>
 	function triggerExpand() {
-		expandAndHighlight('Characters','Backgrounds','charactersToggle')
+		expandAndHighlight('Reference','Keywords','referenceToggle')
 	}
 </script>
 </body>

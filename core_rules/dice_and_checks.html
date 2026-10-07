@@ -28,7 +28,7 @@
 			<nav class="navbar" id="sidebar">
 			</nav>
 		</div>
-		<div class="col-lg-10 col-md-9 content">
+		<div class="col-lg-10 col-md-9 content" data-status="canon">
 			<h1>Dice and Checks</h1>
 
 			<div class="clearfix">
@@ -108,7 +108,7 @@
 				</div>
 				<p>If multiple limits would be applied to a Check, select the lowest.</p>
 
-				<h2 id="mishaps">Mishaps</h2>
+				<h2 id="mishaps" data-status="open">Mishaps</h2>
 				<p>When a Check is failed and at least half of the dice rolled (rounded up) show a 1, a Mishap occurs. A Mishap introduces an additional complication appropriate to the action, such as attracting unwanted attention, damaging equipment or placing oneself in danger. A successful Check never causes a Mishap, regardless of how many 1s are rolled.</p>
 
 				<h2 id="opposedchecks">Opposed Checks</h2>
@@ -119,7 +119,7 @@
 				<p>When the two creatures score the same number of Hits, they tie. Unless otherwise stated, a tie favors the defender or otherwise preserves the current situation.</p>
 
 				<h2 id="extendedchecks">Extended Checks</h2>
-				<p>Sometimes tasks are too complex or time-consuming to resolve with a single Check. These are resolved as <strong>Extended Checks.</strong> An Extended Check has a Threshold and an <strong>Interval.</strong> You make the associated Check once each Interval and add reduce the Threshold by your total. When you accumulated Hits equal or exceeds the Threshold, the task is completed.</p>
+				<p>Sometimes tasks are too complex or time-consuming to resolve with a single Check. These are resolved as <strong>Extended Checks.</strong> An Extended Check has a Threshold and an <strong>Interval.</strong> You make the associated Check once each Interval and keep track of your total number of Hits. When you accumulated Hits equal or exceeds the Threshold, the task is completed.</p>
 				<p>Each time you make a Check as part of an Extended Check, you gain a <strong>-1 dice</strong> cumulative penalty for any subsequent Checks. If your Dice Pool is reduced to 0 before you complete the task, you fail.</p>
 				<table>
 					<tbody>
@@ -200,7 +200,7 @@
 					</tbody>
 				</table>
 				<div class="optional">
-					<p><strong>Example:</strong> You are repairing a damage suit of chainmail. The GM calls for an ACU + Smithing (9, 1 Hour) Extended Check. Each hour you make the check. Once your accumulate 12 Hits, the repairs are complete, assuming you don't run out of dice.</p>
+					<p><strong>Example:</strong> You are repairing a damage suit of chainmail. The GM calls for an ACU + Smithing (9, 1 Hour) Extended Check. Each hour you make the check. Once your accumulate 9 Hits, the repairs are complete, assuming you don't run out of dice.</p>
 				</div>
 				
 			</div>

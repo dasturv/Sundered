@@ -29,14 +29,14 @@
 			<nav class="navbar" id="sidebar">
 			</nav>
 		</div>
-		<div class="col-lg-10 col-md-9 content">
+		<div class="col-lg-10 col-md-9 content" data-status="canon">
 			<h1>
 				Traits
 			</h1>
 			<p>Traits represent unusual training, knowledge, qualities or parts of physiology that makes you character unique. Traits are core to determining what your character can do, whereas Skills and Attributes determine how well they do.</p>
 
 			<h2>Gaining Traits</h2>
-			<p>Traits are primarily obtained during <a href="characters/character_creation.html">character creation</a> using the XP granted from your Ancestry and Background. Though, you are able to gain additional Traits throughout play via <a href="characters/advancement.html">Advancement.</a> Purchasing Traits follows the following rules:</p>
+			<p>Traits are primarily obtained during <a href="characters/character_creation.html">character creation</a> using the XP granted from your Ancestry and Age. Though, you are able to gain additional Traits throughout play via <a href="characters/advancement.html">Advancement.</a> Purchasing Traits follows the following rules:</p>
 			<ul>
 				<li>To purchase a Trait or increase its rank by 1, you must spend XP equal to the Trait's XP cost. You cannot increase a Trait's rank above its max rank. Increasing a Trait's rank still counts towards the total XP spent on a single trait during character creation.</li>
 				<li>You cannot purchase a Trait you do not meet the requirements for. This only applies to purchasing Traits: if another feature such as your Ancestry grants a Trait, you do not need to meet any requirements.</li>
@@ -50,7 +50,28 @@
 			<h2>Trait List</h2>
 
 			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Traits..">
-			<div id="traitsTable"></div>
+			<table id="traitsTable">
+				<tbody>
+					<tr>
+						<th>Trait</th>
+						<th>XP Cost</th>
+						<th>Max Rank</th>
+						<th>Requirements</th>
+					</tr>
+					<tr>
+						<td><a href="characters/traits/ambidextrous.html">Ambidextrous</a></td>
+						<td>10 XP</td>
+						<td>I</td>
+						<td><em>FIN 3</em></td>
+					</tr>
+					<tr>
+						<td><a href="characters/traits/rapid_strikes.html">Rapid Strikes</a></td>
+						<td>15 XP</td>
+						<td>I</td>
+						<td><em>FIN 3</em></td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
 	<div class="row">
