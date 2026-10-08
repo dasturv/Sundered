@@ -38,6 +38,7 @@
 						<li><a href="reference/basic_actions.html#attack">Attack</a></li>
 						<li><a href="reference/basic_actions.html#block">Block</a></li>
 						<li><a href="reference/basic_actions.html#dash">Dash</a></li>
+						<li><a href="reference/basic_actions.html#hide">Hide</a></li>
 						<li><a href="reference/basic_actions.html#move">Move</a></li>
 					</ul>
 				</div>
@@ -50,6 +51,9 @@
 
 				<h2 id="dash">Dash — 1 AP</h2>
 				<p>You move up to 1.5x your speed (rounded down), but gain 1 <a href="reference/keywords.html#exertion">Exertion</a>. See <a href="combat/movement.html">Movement</a> for more details.</p>
+
+				<h2 id="hide">Hide — 1 AP</h2>
+				<p>You make a FIN + Stealth Check opposed by your targets' AWR + Perception Check. If the target is Aware of you and you aren't already Hidden, you suffer a -4 dice penalty on this Check. On a success, you become <a href="refercne/keywords.html#hidden">Hidden</a>.</p>
 
 				<h2 id="move">Move — 1 AP</h2>
 				<p>You move up to your speed. See <a href="combat/movement.html">Movement</a> for more details.</p>
@@ -64,7 +68,7 @@
 </div>
 <script>
 	function triggerExpand() {
-		expandAndHighlight('Reference','Keywords','referenceToggle')
+		expandAndHighlight('Reference','BasicActions','referenceToggle')
 	}
 </script>
 </body>
