@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sundered - Rakshasa</title>
+	<base href="../../">
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
+	<div id="head-placeholder"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script>
+		$(function() {
+			$('#head-placeholder').load('navigation/head_content.html');
+			$('#topbar').load('navigation/topbar.html');
+			$('#sidebar').load('navigation/sidebar.html');
+			$('#bottombar').load('navigation/bottombar.html');
+		});
+	</script>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row bg-red">
+		<div class="col-12" id="topbar">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-2 col-md-3 bg-dark">
+			<nav class="navbar" id="sidebar">
+			</nav>
+		</div>
+		<div class="col-lg-10 col-md-9 content" data-status="draft">
+			<h1>Rakshasa</h1>
+			<p>The Rakshasa are a people with bestial and monstrous visages. While not monstrous in temperment, their fearsome appearance leads many Rakshasa to experience isolation or violence from others. When interacting with their own devices or when truly accepted by a society, the Rakshasa make fierce and loyal allies.</p>
+			<table>
+				<tbody>
+					<tr>
+						<th>PHY</th>
+						<th>FIN</th>
+						<th>REF</th>
+						<th>END</th>
+						<th>PRE</th>
+						<th>ACU</th>
+						<th>AWR</th>
+						<th>WIL</th>
+						<th>ATT</th>
+						<th>LCK</th>
+						<th>XP</th>
+						<th>Traits</th>
+					</tr>
+					<tr>
+						<td>1/6</td>
+						<td>1/6</td>
+						<td>1/6</td>
+						<td>1/6</td>
+						<td>1/6</td>
+						<td>1/6</td>
+						<td>2/7</td>
+						<td>1/6</td>
+						<td>0/6</td>
+						<td>0/6</td>
+						<td>20</td>
+						<td><em><a href="characters/traits/carnivore.html">Carnivore</a>, <a href="characters/traits/keen_senses.html">Keen Senses (Smell)</a>, <a href="characters/traits/low_light_vision.html">Low-light Vision</a>, <a href="characters/traits/natural_weapon.html">Natural Weapon (Bite, Claw or Horn)</a></em></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h2>Morphs</h2>
+			<p>The Rakshasa come in many forms, with several showing unique traits.</p>
+			<ul>
+				<li><strong>Bouda — 10 XP.</strong> <em><a href="characters/traits/berserk.html">Berserk</a>, Improved Attribute (PHY)</em>. The Bouda are bulky Rakshasa taking the forms of hyenas, lions, bulls or monstrous humans with bright red, green or blue skin. They are exceptionally strong and are filled with an instinctual rage. Many see a Bouda as even more of a monster than other Rakshasa, leading to exile at best and extermination at worst.</li>
+				<li><strong>Huling — 10 XP.</strong> <em>Improved Attribute (ATT), <a href="characters/traits/small.html">Small</a></em>. Huling are small fox-like or cat-like Rakshasa with a penchant for magic. They are often born with two or more tails. Many cultures view the Huling with suspicion, leading most to live their lives either hidden or disguised by magic.</li>
+			</ul>
+
+			<h2>Physiology</h2>
+			<p>Rakshasa are humanoids with the heads of jackals, foxes, felines, or goats, with the occasional wolf or bull. They are most often covered in thick fur, matching the coloring and patterning of the animal the represent. All Rakshasa have human-like hands that face backwards, and have their canines protrude as a pairs of tusks, one pointing up and the other down. Rakshasa are carnivores, and require meat to be a major portion of their diet to remain healthy. A Rakshasa has acute senses, with the ability to see well at night and a sharp sense of smell.</p>
+
+			<h2>Personality</h2>
+			<p>Despite their fierce appearance, a Rakshasa is not a monster. They are an intuitive and insightful people who experience the world in more vivid ways than their peers. A Rakshasa can sometimes seem beast-like or quick to anger, but in reality most are simply in tune with their instincts and reactive due to the hardships they face. A Rakshasa friend is fiercely loyal and deeply caring, even if they usually have a chip on their shoulder.</p>
+
+			<h2>Culture and History</h2>
+			<p>The Rakshasa's history is one of persecution and hardship. Often used as scapegoats or hunted as monsters, Rakshasa communities have almost always been forced to the edges of the civilization. There, in the deserts, tundras and deep forests of the world the Rakshasa built communities and tribes strong enough to withstand the dangers they faced from the wilderness and their neighbors.</p>
+
+			<h2>Relationships</h2>
+			<p>Despite their oppression, the Rakshasa are not without allies. The Jotunn almost always have friendly ties with Rakshasa communities, with both trading freely with one another when the nomadic giants visit. Beyond them, the Rakshasa tend to have good relationships with others who are oppressed or exiled. Occasionally, an entrepid merchant or hunter will strike up a relationship with the Rakshasa, though they must often keep their dealings a secret lest they become exiles as well.</p>
+		</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12" id="bottombar">
+		</div>
+	</div>
+</div>
+<script>
+	function triggerExpand() {
+		expandAndHighlight('Characters','Ancestries','charactersToggle')
+	}
+</script>
+</body>
+</html>
