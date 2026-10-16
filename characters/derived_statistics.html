@@ -42,6 +42,42 @@
 				</div>
 
 				<p>Below are several statistics that are derived from Attributes, Skills and other parts of character creation.</p>
+				
+				<h2 id="carryingcapacity">Carrying Capacities</h2>
+				<p>How much a character can carry depends on their Physique. There are multiple tiers of weight below, which provide penalties when that threshold is surpassed.</p>
+				<table class="small-table">
+					<tbody>
+						<tr>
+							<th>Load</th>
+							<th>Weight (lbs)</th>
+							<th>Effects</th>
+						</tr>
+						<tr>
+							<td>Light Load</td>
+							<td>0</td>
+							<td>—</td>
+						</tr>
+						<tr>
+							<td>Medium Load</td>
+							<td>10 x PHY</td>
+							<td>Your speed is reduced by 1 and you suffer a -2 dice penalty on Physical Checks.</td>
+						</tr>
+						<tr>
+							<td>Heavy Load</td>
+							<td>20 x PHY</td>
+							<td>Your speed is halved (rounded down) and you suffer a -4 dice penalty on Physical Checks.</td>
+						</tr>
+						<tr>
+							<td>Overencumbered</td>
+							<td>40 x PHY</td>
+							<td>Your speed is reduced to 0 and you suffer a -8 dice penalty on Physical Checks.</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p>In addition to carrying capacity, you can lift up to 50 x PHY lbs and push or pull up to 60 x PHY lbs</p>
+				<p>Your size modifies how much you can carry, lift, push or pull. A character has these values halved once for each size smaller than medium they are, and doubled once for each size above medium they are.</p>
+
 				<h2 id="healthandoverflow">Health and Overflow</h2>
 				<p>A character's maximum Health is calculated by adding their Endurance and Base Health together.</p>
 				<div class="equation">
